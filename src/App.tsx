@@ -1,5 +1,4 @@
-import './App.scss'
-
+import './style/App.scss'
 import { FaGithubSquare, FaTwitterSquare } from 'react-icons/fa'
 
 const App = () => {
