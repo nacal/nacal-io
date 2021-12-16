@@ -1,0 +1,13 @@
+.title {
+  font-size: 25vh;
+  font-weight: bold;
+  position: fixed;
+  line-height: 1em;
+  transform: rotate(90deg) translate(30vh, 35vh);
+
+  @media screen and (min-width: 1200px) {
+    transform: rotate(0);
+    right: 0;
+    bottom: -2.5rem;
+  }
+}
