@@ -1,20 +1,21 @@
 body {
-  min-height: 100vh;
   font-family: Roboto, arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#root {
-  min-height: 100vh;
-}
-
 html,
 body,
+main,
 #root {
+  min-height: 100vh;
   @supports (-webkit-touch-callout: none) {
     body {
       height: -webkit-fill-available;
     }
   }
+}
+
+a {
+  cursor: pointer;
 }
