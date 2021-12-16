@@ -17,10 +17,10 @@ const App = () => {
           <div>
             <div className='links'>
               <a href='https://github.com/nacal' className='icon'>
-                <FaGithubSquare />
+                <FaGithubSquare title='GitHub icon' />
               </a>
               <a href='https://twitter.com/_nacal' className='icon'>
-                <FaTwitterSquare />
+                <FaTwitterSquare title='Twitter icon' />
               </a>
             </div>
             <h2 className='copy'>Under development.</h2>
