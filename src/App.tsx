@@ -2,11 +2,15 @@ import './style/App.scss'
 import { FaGithubSquare, FaTwitterSquare } from 'react-icons/fa'
 import { useState, useEffect } from 'react'
 
-const useInnerHeigh = () => {
-  const getInnerHeight = () => {
-    return window.innerHeight
-  }
+const getInnerHeight = () => {
+  return window.innerHeight
+}
 
+const getInnerHeightAsVh = (size: number) => {
+  return (getInnerHeight() / 100) * size + 'px'
+}
+
+const useInnerHeigh = () => {
   const [innerHeight, setInnerHeight] = useState(getInnerHeight())
   useEffect(() => {
     const onResize = () => {
@@ -27,8 +31,13 @@ const App = () => {
           href='https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap&subset=japanese'
         />
       </head>
-      <main style={{ height: useInnerHeigh() }}>
-        <h1 className='title'>nacal.io</h1>
+      <main style={{ ['--innerHeight' as string]: useInnerHeigh() }}>
+        <h1
+          className='title'
+          style={{ ['--titleFontSize' as string]: getInnerHeightAsVh(25) }}
+        >
+          nacal.io
+        </h1>
         <div className='contents'>
           <div>
             <div className='links'>
