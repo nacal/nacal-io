@@ -1,19 +1,5 @@
 body {
   font-family: Roboto, arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-html,
-body,
-main,
-#root {
-  min-height: 100vh;
-  @supports (-webkit-touch-callout: none) {
-    body {
-      height: -webkit-fill-available;
-    }
-  }
 }
 
 a {
