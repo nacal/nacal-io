@@ -27,8 +27,8 @@ const App = () => {
     <>
       <head>
         <link
+          href='https://fonts.googleapis.com/css?family=Roboto'
           rel='stylesheet'
-          href='https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap&subset=japanese'
         />
       </head>
       <main style={{ ['--innerHeight' as string]: useInnerHeigh() }}>
