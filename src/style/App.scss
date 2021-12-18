@@ -15,7 +15,7 @@
 .contents {
   display: grid;
   place-items: end;
-  min-height: 100vh;
+  height: 100%;
   padding: 0 1rem 1rem 0;
   @media screen and (min-width: 1200px) {
     place-items: center;

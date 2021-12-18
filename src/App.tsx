@@ -19,7 +19,7 @@ const useInnerHeigh = () => {
     window.addEventListener('resize', onResize)
     return () => window.removeEventListener('resize', onResize)
   }, [])
-  return innerHeight
+  return innerHeight + 'px'
 }
 
 const App = () => {
