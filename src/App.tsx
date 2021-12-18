@@ -25,12 +25,6 @@ const useInnerHeigh = () => {
 const App = () => {
   return (
     <>
-      <head>
-        <link
-          href='https://fonts.googleapis.com/css?family=Roboto'
-          rel='stylesheet'
-        />
-      </head>
       <main style={{ ['--innerHeight' as string]: useInnerHeigh() }}>
         <h1
           className='title'
