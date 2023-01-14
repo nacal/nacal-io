@@ -25,13 +25,13 @@ const useInnerHeigh = () => {
 const App = () => {
   return (
     <>
-      <main style={{ ['--innerHeight' as string]: useInnerHeigh() }}>
-        {/* <h1
+      {/* <main style={{ ['--innerHeight' as string]: useInnerHeigh() }}>
+        <h1
           className='title'
           style={{ ['--titleFontSize' as string]: getInnerHeightAsVh(25) }}
         >
           nacal.io
-        </h1> */}
+        </h1>
         <div className='contents'>
           <div>
             <div className='links'>
@@ -48,7 +48,7 @@ const App = () => {
             </address>
           </div>
         </div>
-      </main>
+      </main> */}
     </>
   )
 }
